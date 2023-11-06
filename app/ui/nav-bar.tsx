@@ -23,9 +23,10 @@ export default function NavBar({windowPosition}: { windowPosition: number }) {
                         <li key={menu.name}>
                             <a className={clsx('group flex items-center py-3', menu.isActive && 'active')}
                                href={'#' + menu.name.toLowerCase()}>
-                                <span
-                                    className="mr-4 h-px w-8 bg-slate-600 transition-all motion-reduce:transform-none"></span>
-                                <span>{menu.name}</span>
+                                <span className="nav-indicator mr-4 h-px w-8 bg-slate-400 group-hover:w-16 group-hover:bg-slate-600
+                                group-focus-visible:bg-slate-600
+                                transition-all motion-reduce:transform-none"/>
+                                <span className="nav-text text-slate-400 group-hover:text-slate-600">{menu.name}</span>
                             </a>
                         </li>
                     )

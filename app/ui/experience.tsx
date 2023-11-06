@@ -52,25 +52,26 @@ export default function Experience() {
                             <li className="mb-12" key={index}>
                                 <div className="group grid lg:group-hover:opacity-50 lg:hover:!opacity-100
                                 md:gap-4 pb-1 relative sm:gap-8 sm:grid-cols-10 transition-all">
-                                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition
-                                    lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800 lg:group-hover:drop-shadow-lg"/>
+                                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition
+                                    lg:-inset-x-6 lg:block lg:group-hover:bg-neutral-100 lg:group-hover:drop-shadow-lg"/>
                                     <div
-                                        className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide sm:col-span-3">
+                                        className="z-10 mb-2 mt-1 text-xs font-semibold uppercase text-slate-700
+                                         tracking-wide sm:col-span-3">
                                         {exp.employmentDates}
                                     </div>
                                     <div className="z-10 sm:col-span-7">
-                                        <h3 className="font-medium leading-snug">
+                                        <h3 className="font-medium leading-snug group-hover:text-sky-700">
                                             <div>{exp.title}</div>
                                         </h3>
-                                        <div className="mt-2 text-sm leading-normal">
+                                        <div className="mt-2 text-sm leading-normal text-slate-700">
                                             {exp.description.map((desc, index) => <p key={index}>{desc}</p>)}
                                         </div>
                                         <ul className="mt-2 flex flex-wrap">
                                             {exp.usedTechnologies.map((tech, index) => {
                                                 return (
                                                     <li className="mr-1.5 mt-2" key={index}>
-                                                        <div
-                                                            className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">{tech}</div>
+                                                        <div className="flex items-center rounded-full bg-cyan-200/40
+                                                        px-3 py-1 text-xs font-medium leading-5 text-cyan-800">{tech}</div>
                                                     </li>
                                                 )
                                             })}
