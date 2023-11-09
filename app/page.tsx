@@ -33,7 +33,7 @@ export default function Home() {
                             Engineer</h2>
                         <p className="text-slate-700">I build financial and office automation SaaS products, provide
                             accessible friendly user
-                            experience for the web</p>
+                            experience for the web application on the cloud.</p>
 
                         <NavBar windowPosition={windowPosition}/>
                     </div>
