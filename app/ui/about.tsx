@@ -9,7 +9,7 @@ export default function About() {
                 Back in 2015, I was just a low-voltage electrical engineer working with PLC programs.
                 It was at the urging of my friend that I first tumbled head into the rabbit hole of coding and web
                 development.
-                Fast forward to today, I've had the privilege of building software for a <span
+                Fast forward to today, I&#39;ve had the privilege of building software for a <span
                 className="font-medium text-cyan-700">start-up</span>
                 , an <a className="font-medium text-cyan-700 hover:text-cyan-500" href="https://www.manulife.com/"
                         target="_blank">international financial
@@ -23,7 +23,8 @@ export default function About() {
                 technology stack.
             </p>
             <p className="mb-4 text-slate-700">
-                When I'm not at the computer, I'm usually taking leisurely strolls with my partner, indulging in diverse
+                When I&#39;m not at the computer, I&#39;m usually taking leisurely strolls with my partner, indulging in
+                diverse
                 cuisines,
                 or tackling endless traffic jam in <a className="font-medium text-cyan-700 hover:text-cyan-500"
                                                       href="https://www.paradoxinteractive.com/games/cities-skylines-ii/about"
