@@ -7,6 +7,13 @@ interface WorkingExperience {
 
 const experiences: WorkingExperience[] = [
     {
+        employmentDates: 'DEC·2023 — NOW',
+        title: 'Full Stack Engineer · ETO Markets',
+        description: ['Built a forex copy trading application, providing low latency copy trading for various financial products.',
+            'Refactor an old CRM system by optimizing hierarchical agent relationships and commission calculation'],
+        usedTechnologies: ['TypeScript', 'Nest.js', 'TypeORM', 'AWS SQS', 'AWS SES', 'Java', 'Mybatis-Plus', 'PostgresSQL']
+    },
+    {
         employmentDates: 'OCT·2021 — AUG·2023',
         title: 'Team Lead · China Merchants Bank',
         description: ['Built an OA SaaS platform, providing over 3,900 applications for more than 160,000 users those who are internal employees and company’s clients.',
@@ -40,7 +47,7 @@ const experiences: WorkingExperience[] = [
 
 export default function Experience() {
     return (
-        <section id="experience" className="mb-16 md:mb-24 lg:mb-36">
+        <section id="experiences" className="mb-16 md:mb-24 lg:mb-36">
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 md:-mx-12 md:px-12
             lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
                 <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">Experience</h2>
@@ -82,6 +89,11 @@ export default function Experience() {
                         )
                     })}
                 </ol>
+            </div>
+            <div>
+                <a href="/resume.pdf">
+                    <span className="border-b border-transparent pb-px transition hover:border-cyan-800 font-bold">View Full Résumé →</span>
+                </a>
             </div>
         </section>
     )

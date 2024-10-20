@@ -27,13 +27,13 @@ export default function Home() {
             <div className="lg:flex lg:justify-between lg:gap-4">
                 <div
                     className="lg:flex lg:sticky lg:top-0 lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 lg:max-h-screen">
-                    <div>
+                    <div className="lg:w-5/6">
                         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-slate-900">Jacob Chen</h1>
                         <h2 className="text-lg font-medium mt-3 tracking-tight sm:text-xl text-slate-800">Fullstack
                             Engineer</h2>
                         <p className="text-slate-700">I build financial and office automation SaaS products, provide
                             accessible friendly user
-                            experience for the web application on the cloud.</p>
+                            experience for the web application deploying on the cloud platform.</p>
 
                         <NavBar windowPosition={windowPosition}/>
                     </div>
@@ -57,10 +57,11 @@ export default function Home() {
                                 href="https://react.dev/" target="_blank">React.js</a>,
                             deployed with <a className="font-medium text-slate-700 hover:text-sky-700"
                                              href="https://vercel.com/" target="_blank">Vercel</a>.
-                            All text is set in the Inter typeface.</p>
+                            All text is set in the <a className="font-medium text-slate-700 hover:text-sky-700"
+                                                      href="https://rsms.me/inter/" target="_blank">Inter</a> typeface.</p>
                     </footer>
                 </div>
             </div>
         </div>
-    )
+)
 }

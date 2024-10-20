@@ -9,10 +9,10 @@ export default function NavBar({windowPosition}: { windowPosition: number }) {
         isActive: windowPosition <= 120
     }, {
         name: 'EXPERIENCES',
-        isActive: windowPosition > 120 && windowPosition <= 1200
+        isActive: windowPosition > 120 && windowPosition <= 1300
     }, {
         name: 'PROJECTS',
-        isActive: windowPosition > 1200
+        isActive: windowPosition > 1300
     }];
 
     return (
